@@ -11,11 +11,17 @@ import androidx.navigation.compose.rememberNavController
 import com.example.car_damage_diagnosis.ui.navigation.AppNavigation
 import com.example.car_damage_diagnosis.ui.theme.CarDamageDiagnosisTheme
 import dagger.hilt.android.AndroidEntryPoint
+import android.view.WindowManager
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Скрытие строки состояния
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
         setContent {
             CarDamageDiagnosisTheme {
                 Surface(
