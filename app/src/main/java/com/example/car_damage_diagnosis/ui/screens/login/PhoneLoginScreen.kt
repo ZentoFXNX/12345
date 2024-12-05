@@ -1,5 +1,6 @@
 package com.example.car_damage_diagnosis.ui.screens.login
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
@@ -9,9 +10,13 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.car_damage_diagnosis.R
 
 @Composable
 fun PhoneLoginScreen(
@@ -23,88 +28,73 @@ fun PhoneLoginScreen(
     val isValidPhoneNumber by viewModel.isValidPhoneNumber.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
 
-    Scaffold(
-        topBar = {
-            TopAppBar(
-                title = { Text("Ввод номера телефона") },
-                navigationIcon = {
-                    IconButton(onClick = onBackToWelcome) {
-                        Icon(
-                            imageVector = Icons.Default.KeyboardArrowLeft,
-                            contentDescription = "Back to Welcome"
-                        )
-                    }
-                }
-            )
-        }
-    ) { innerPadding ->
+    Scaffold { innerPadding ->
         Column(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(innerPadding)
-                .padding(16.dp),
+                .padding(top = 150.dp, start = 16.dp, end = 16.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
+            verticalArrangement = Arrangement.Top
         ) {
-            Text(
-                text = "Введите номер телефона",
-                style = MaterialTheme.typography.headlineMedium,
-                modifier = Modifier.padding(bottom = 16.dp)
-            )
-
-            Text(
-                text = "Мы пришлем вам код подтверждения СМС сообщением",
-                style = MaterialTheme.typography.bodyMedium,
-                modifier = Modifier.padding(bottom = 32.dp)
+            Image(
+                painter = painterResource(id = R.drawable.frame_1),
+                contentDescription = "Phone Login Image",
+                modifier = Modifier
+                    .padding(bottom = 60.dp)
+                    .width(160.dp)
+                    .height(160.dp)
             )
 
             OutlinedTextField(
                 value = phoneNumber,
-                onValueChange = { 
-                    viewModel.updatePhoneNumber(it.filter { char -> char.isDigit() }) 
+                onValueChange = {
+                    viewModel.updatePhoneNumber(it.filter { char -> char.isDigit() })
                 },
                 label = { Text("Номер телефона") },
                 prefix = { Text("+7 ") },
-                placeholder = { Text("9991234567") },
-                leadingIcon = { 
-                    Icon(
-                        imageVector = Icons.Default.Phone, 
-                        contentDescription = "Phone Number"
-                    ) 
-                },
+                placeholder = { Text("") },
                 keyboardOptions = KeyboardOptions(
                     keyboardType = KeyboardType.Phone
                 ),
                 singleLine = true,
                 maxLines = 1,
                 isError = phoneNumber.isNotEmpty() && phoneNumber.length < 10,
-                supportingText = {
-                    if (phoneNumber.isNotEmpty() && phoneNumber.length < 10) {
-                        Text("Введите полный номер телефона")
-                    }
-                },
-                modifier = Modifier.fillMaxWidth()
+                modifier = Modifier
+                    .width(380.dp)
+                    .heightIn(min = 50.dp),
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = Color(0xFF65558F),
+                    unfocusedBorderColor = Color(0xFF79747E),
+                    focusedLabelColor = Color(0xFF65558F),
+                    unfocusedLabelColor = Color(0xFF79747E)
+                )
             )
 
-            Spacer(modifier = Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(20.dp))
 
             Button(
-                onClick = { 
+                onClick = {
                     viewModel.sendVerificationCode()
-                    onNavigateToVerification(phoneNumber) 
+                    onNavigateToVerification(phoneNumber)
                 },
                 enabled = isValidPhoneNumber && !isLoading,
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .height(56.dp)
+                    .width(380.dp)
+                    .height(50.dp),
+                shape = RectangleShape,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFF65558F),
+                    contentColor = Color.White
+                )
             ) {
                 if (isLoading) {
                     CircularProgressIndicator(
-                        color = MaterialTheme.colorScheme.onPrimary,
+                        color = Color.White,
                         modifier = Modifier.size(24.dp)
                     )
                 } else {
-                    Text("Отправить код подтверждения")
+                    Text("Получить код")
                 }
             }
         }
