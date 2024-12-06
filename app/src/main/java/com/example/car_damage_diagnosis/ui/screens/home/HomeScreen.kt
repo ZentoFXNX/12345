@@ -16,6 +16,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape // For RoundedCorner
 import androidx.compose.ui.graphics.Color // For Color
 import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.draw.shadow
+import androidx.compose.foundation.clickable
 
 @Composable
 fun HomeScreen() {
@@ -23,11 +24,14 @@ fun HomeScreen() {
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
+        // Текст "History"
         Text(text = "History")
 
+        // Кликабельный контейнер для кнопки
         Box(
             modifier = Modifier
                 .align(Alignment.BottomEnd)
+                .offset(x = (-5).dp, y = (-5).dp) // Лёгкое смещение влево и вверх
                 .padding(end = 14.dp, bottom = 14.dp)
                 .size(60.dp)
                 .shadow(
@@ -37,18 +41,16 @@ fun HomeScreen() {
                 .background(
                     color = Color(0xFFECE6F0),
                     shape = RoundedCornerShape(8.dp)
-                ),
+                )
+                .clickable(onClick = { /* Действие при нажатии */ }), // Контейнер стал кликабельным
             contentAlignment = Alignment.Center
         ) {
-            IconButton(
-                onClick = { /* Действие при нажатии */ }
-            ) {
-                Icon(
-                    painter = painterResource(id = R.drawable.ic_download),
-                    contentDescription = "Download Icon",
-                    tint = Color.Unspecified
-                )
-            }
+            // Иконка внутри кликабельного контейнера
+            Icon(
+                painter = painterResource(id = R.drawable.ic_download),
+                contentDescription = "Download Icon",
+                tint = Color.Unspecified
+            )
         }
     }
 }

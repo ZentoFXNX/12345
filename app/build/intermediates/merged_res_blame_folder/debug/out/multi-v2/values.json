@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/res/values/strings.xml",
+                    "source": "/Users/daddyzento/12345/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -91,7 +91,24 @@
                     }
                 },
                 {
-                    "source": "/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/res/values/ic_launcher_background.xml",
+                    "source": "/Users/daddyzento/12345/app/src/main/res/values/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "95",
+                        "endOffsets": "146"
+                    },
+                    "to": {
+                        "startLines": "212",
+                        "startColumns": "4",
+                        "startOffsets": "13274",
+                        "endColumns": "94",
+                        "endOffsets": "13364"
+                    }
+                },
+                {
+                    "source": "/Users/daddyzento/12345/app/src/main/res/values/ic_launcher_background.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -124,23 +141,6 @@
                         "endLines": "77,221,370,373",
                         "endColumns": "52,24,24,24",
                         "endOffsets": "4859,13807,19269,19384"
-                    }
-                },
-                {
-                    "source": "/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/res/values/themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "95",
-                        "endOffsets": "146"
-                    },
-                    "to": {
-                        "startLines": "212",
-                        "startColumns": "4",
-                        "startOffsets": "13274",
-                        "endColumns": "94",
-                        "endOffsets": "13364"
                     }
                 },
                 {

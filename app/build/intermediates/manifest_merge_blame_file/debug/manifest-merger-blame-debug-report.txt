@@ -6,25 +6,25 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml
+8-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="34" />
-9-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml
+9-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:5:22-64
+11-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.CAMERA" />
-12-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:6:5-65
-12-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:6:22-62
+12-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:6:5-65
+12-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:6:22-62
 13    <uses-permission
-13-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:7:5-8:38
+13-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:7:5-8:38
 14        android:name="android.permission.READ_EXTERNAL_STORAGE"
-14-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:7:22-77
+14-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:7:22-77
 15        android:maxSdkVersion="32" />
-15-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:8:9-35
+15-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:8:9-35
 16    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-16-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:9:5-76
-16-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:9:22-73
+16-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:9:5-76
+16-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:9:22-73
 17
 18    <permission
 18-->[androidx.core:core:1.12.0] /Users/daddyzento/.gradle/caches/transforms-4/85db6a7458c7193dbded39db66a7d5f3/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
@@ -38,47 +38,47 @@
 22-->[androidx.core:core:1.12.0] /Users/daddyzento/.gradle/caches/transforms-4/85db6a7458c7193dbded39db66a7d5f3/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 23
 24    <application
-24-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:11:5-31:19
+24-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:11:5-31:19
 25        android:name="com.example.car_damage_diagnosis.CarDamageApp"
-25-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:12:9-37
+25-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:12:9-37
 26        android:allowBackup="true"
-26-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:13:9-35
+26-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:13:9-35
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 27-->[androidx.core:core:1.12.0] /Users/daddyzento/.gradle/caches/transforms-4/85db6a7458c7193dbded39db66a7d5f3/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 28        android:dataExtractionRules="@xml/data_extraction_rules"
-28-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:14:9-65
+28-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:14:9-65
 29        android:debuggable="true"
 30        android:extractNativeLibs="false"
 31        android:fullBackupContent="@xml/backup_rules"
-31-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:15:9-54
+31-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:15:9-54
 32        android:icon="@mipmap/ic_launcher"
-32-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:16:9-43
+32-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:16:9-43
 33        android:label="@string/app_name"
-33-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:17:9-41
+33-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:17:9-41
 34        android:roundIcon="@mipmap/ic_launcher_round"
-34-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:18:9-54
+34-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:18:9-54
 35        android:supportsRtl="true"
-35-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:19:9-35
+35-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:19:9-35
 36        android:testOnly="true"
 37        android:theme="@style/Theme.CarDamageDiagnosis" >
-37-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:20:9-56
+37-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:20:9-56
 38        <activity
-38-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:22:9-30:20
+38-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:22:9-30:20
 39            android:name="com.example.car_damage_diagnosis.MainActivity"
-39-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:23:13-41
+39-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:23:13-41
 40            android:exported="true"
-40-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:24:13-36
+40-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:24:13-36
 41            android:theme="@style/Theme.CarDamageDiagnosis" >
-41-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:25:13-60
+41-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:25:13-60
 42            <intent-filter>
-42-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:26:13-29:29
+42-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:26:13-29:29
 43                <action android:name="android.intent.action.MAIN" />
-43-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:27:17-69
-43-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:27:25-66
+43-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:27:17-69
+43-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:27:25-66
 44
 45                <category android:name="android.intent.category.LAUNCHER" />
-45-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:28:17-77
-45-->/Users/daddyzento/Desktop/CarDamageDiagnosissks/app/src/main/AndroidManifest.xml:28:27-74
+45-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:28:17-77
+45-->/Users/daddyzento/12345/app/src/main/AndroidManifest.xml:28:27-74
 46            </intent-filter>
 47        </activity>
 48        <activity
