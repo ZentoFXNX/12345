@@ -29,10 +29,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.screens.history.HistoryActivity" />
 
         <!-- HistoryActivity временно настроена как стартовая -->
 <!--        <activity-->
-<!--            android:name=".ui.screens.history.HistoryActivity"-->
+<!--            m-->
 <!--            android:exported="true"-->
 <!--            android:theme="@style/Theme.CarDamageDiagnosis">-->
 <!--            <intent-filter>-->
