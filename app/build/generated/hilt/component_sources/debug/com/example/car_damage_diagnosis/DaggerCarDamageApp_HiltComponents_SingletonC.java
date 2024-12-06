@@ -11,6 +11,8 @@ import com.example.car_damage_diagnosis.ui.screens.login.PhoneLoginViewModel;
 import com.example.car_damage_diagnosis.ui.screens.login.PhoneLoginViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.example.car_damage_diagnosis.ui.screens.login.VerifyCodeViewModel;
 import com.example.car_damage_diagnosis.ui.screens.login.VerifyCodeViewModel_HiltModules_KeyModule_ProvideFactory;
+import com.example.car_damage_diagnosis.ui.screens.settings.SettingsViewModel;
+import com.example.car_damage_diagnosis.ui.screens.settings.SettingsViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.example.car_damage_diagnosis.ui.screens.welcome.WelcomeViewModel;
 import com.example.car_damage_diagnosis.ui.screens.welcome.WelcomeViewModel_HiltModules_KeyModule_ProvideFactory;
 import dagger.hilt.android.ActivityRetainedLifecycle;
@@ -27,6 +29,7 @@ import dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories;
 import dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories_InternalFactoryFactory_Factory;
 import dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory;
 import dagger.hilt.android.internal.modules.ApplicationContextModule;
+import dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideContextFactory;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.DoubleCheck;
 import dagger.internal.MapBuilder;
@@ -50,20 +53,14 @@ public final class DaggerCarDamageApp_HiltComponents_SingletonC {
     return new Builder();
   }
 
-  public static CarDamageApp_HiltComponents.SingletonC create() {
-    return new Builder().build();
-  }
-
   public static final class Builder {
+    private ApplicationContextModule applicationContextModule;
+
     private Builder() {
     }
 
-    /**
-     * @deprecated This module is declared, but an instance is not used in the component. This method is a no-op. For more, see https://dagger.dev/unused-modules.
-     */
-    @Deprecated
     public Builder applicationContextModule(ApplicationContextModule applicationContextModule) {
-      Preconditions.checkNotNull(applicationContextModule);
+      this.applicationContextModule = Preconditions.checkNotNull(applicationContextModule);
       return this;
     }
 
@@ -78,7 +75,8 @@ public final class DaggerCarDamageApp_HiltComponents_SingletonC {
     }
 
     public CarDamageApp_HiltComponents.SingletonC build() {
-      return new SingletonCImpl();
+      Preconditions.checkBuilderRequirement(applicationContextModule, ApplicationContextModule.class);
+      return new SingletonCImpl(applicationContextModule);
     }
   }
 
@@ -367,7 +365,7 @@ public final class DaggerCarDamageApp_HiltComponents_SingletonC {
 
     @Override
     public Set<String> getViewModelKeys() {
-      return SetBuilder.<String>newSetBuilder(3).add(PhoneLoginViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(VerifyCodeViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(WelcomeViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
+      return SetBuilder.<String>newSetBuilder(4).add(PhoneLoginViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(SettingsViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(VerifyCodeViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(WelcomeViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
     }
 
     @Override
@@ -395,6 +393,8 @@ public final class DaggerCarDamageApp_HiltComponents_SingletonC {
 
     private Provider<PhoneLoginViewModel> phoneLoginViewModelProvider;
 
+    private Provider<SettingsViewModel> settingsViewModelProvider;
+
     private Provider<VerifyCodeViewModel> verifyCodeViewModelProvider;
 
     private Provider<WelcomeViewModel> welcomeViewModelProvider;
@@ -413,13 +413,14 @@ public final class DaggerCarDamageApp_HiltComponents_SingletonC {
     private void initialize(final SavedStateHandle savedStateHandleParam,
         final ViewModelLifecycle viewModelLifecycleParam) {
       this.phoneLoginViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 0);
-      this.verifyCodeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
-      this.welcomeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 2);
+      this.settingsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
+      this.verifyCodeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 2);
+      this.welcomeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 3);
     }
 
     @Override
     public Map<String, Provider<ViewModel>> getHiltViewModelMap() {
-      return MapBuilder.<String, Provider<ViewModel>>newMapBuilder(3).put("com.example.car_damage_diagnosis.ui.screens.login.PhoneLoginViewModel", ((Provider) phoneLoginViewModelProvider)).put("com.example.car_damage_diagnosis.ui.screens.login.VerifyCodeViewModel", ((Provider) verifyCodeViewModelProvider)).put("com.example.car_damage_diagnosis.ui.screens.welcome.WelcomeViewModel", ((Provider) welcomeViewModelProvider)).build();
+      return MapBuilder.<String, Provider<ViewModel>>newMapBuilder(4).put("com.example.car_damage_diagnosis.ui.screens.login.PhoneLoginViewModel", ((Provider) phoneLoginViewModelProvider)).put("com.example.car_damage_diagnosis.ui.screens.settings.SettingsViewModel", ((Provider) settingsViewModelProvider)).put("com.example.car_damage_diagnosis.ui.screens.login.VerifyCodeViewModel", ((Provider) verifyCodeViewModelProvider)).put("com.example.car_damage_diagnosis.ui.screens.welcome.WelcomeViewModel", ((Provider) welcomeViewModelProvider)).build();
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -446,10 +447,13 @@ public final class DaggerCarDamageApp_HiltComponents_SingletonC {
           case 0: // com.example.car_damage_diagnosis.ui.screens.login.PhoneLoginViewModel 
           return (T) new PhoneLoginViewModel();
 
-          case 1: // com.example.car_damage_diagnosis.ui.screens.login.VerifyCodeViewModel 
+          case 1: // com.example.car_damage_diagnosis.ui.screens.settings.SettingsViewModel 
+          return (T) new SettingsViewModel(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
+
+          case 2: // com.example.car_damage_diagnosis.ui.screens.login.VerifyCodeViewModel 
           return (T) new VerifyCodeViewModel();
 
-          case 2: // com.example.car_damage_diagnosis.ui.screens.welcome.WelcomeViewModel 
+          case 3: // com.example.car_damage_diagnosis.ui.screens.welcome.WelcomeViewModel 
           return (T) new WelcomeViewModel();
 
           default: throw new AssertionError(id);
@@ -527,10 +531,12 @@ public final class DaggerCarDamageApp_HiltComponents_SingletonC {
   }
 
   private static final class SingletonCImpl extends CarDamageApp_HiltComponents.SingletonC {
+    private final ApplicationContextModule applicationContextModule;
+
     private final SingletonCImpl singletonCImpl = this;
 
-    private SingletonCImpl() {
-
+    private SingletonCImpl(ApplicationContextModule applicationContextModuleParam) {
+      this.applicationContextModule = applicationContextModuleParam;
 
     }
 

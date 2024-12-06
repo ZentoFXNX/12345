@@ -1,4 +1,4 @@
-#Fri Dec 06 19:09:52 MSK 2024
+#Fri Dec 06 20:38:09 MSK 2024
 base.0=/Users/daddyzento/12345/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
 base.1=/Users/daddyzento/12345/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
 base.2=/Users/daddyzento/12345/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/9/classes.dex

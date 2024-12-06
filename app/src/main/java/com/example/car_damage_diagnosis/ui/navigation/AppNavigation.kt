@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.example.car_damage_diagnosis.ui.screens.history.HistoryScreen
 import com.example.car_damage_diagnosis.ui.screens.home.HomeScreen
 import com.example.car_damage_diagnosis.ui.screens.welcome.WelcomeScreen
 
@@ -15,28 +16,24 @@ fun AppNavigation(navController: NavHostController) {
     ) {
         composable(Screen.Welcome) {
             WelcomeScreen(
-                onNavigateToHome = { 
-                    navController.navigate(Screen.Home) {
+                onNavigateToHome = {
+                    navController.navigate(Screen.History) { // Navigate to History
                         popUpTo(Screen.Welcome) { inclusive = true }
                     }
                 }
             )
         }
-        
-        composable(Screen.Home) {
-            HomeScreen()
+
+        composable(Screen.History) {
+            HistoryScreen()
         }
-        
+
         composable(Screen.CameraCapture) {
             // TODO: Implement CameraCaptureScreen
         }
         
         composable(Screen.DamageAnalysis) {
             // TODO: Implement DamageAnalysisScreen
-        }
-        
-        composable(Screen.History) {
-            // TODO: Implement HistoryScreen
         }
         
         composable(Screen.Profile) {

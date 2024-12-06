@@ -2,6 +2,7 @@ package com.example.car_damage_diagnosis;
 
 import com.example.car_damage_diagnosis.ui.screens.login.PhoneLoginViewModel_HiltModules;
 import com.example.car_damage_diagnosis.ui.screens.login.VerifyCodeViewModel_HiltModules;
+import com.example.car_damage_diagnosis.ui.screens.settings.SettingsViewModel_HiltModules;
 import com.example.car_damage_diagnosis.ui.screens.welcome.WelcomeViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
@@ -147,6 +148,7 @@ public final class CarDamageApp_HiltComponents {
           ViewModelCBuilderModule.class,
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           PhoneLoginViewModel_HiltModules.KeyModule.class,
+          SettingsViewModel_HiltModules.KeyModule.class,
           VerifyCodeViewModel_HiltModules.KeyModule.class,
           WelcomeViewModel_HiltModules.KeyModule.class
       }
@@ -186,6 +188,7 @@ public final class CarDamageApp_HiltComponents {
       modules = {
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
           PhoneLoginViewModel_HiltModules.BindsModule.class,
+          SettingsViewModel_HiltModules.BindsModule.class,
           VerifyCodeViewModel_HiltModules.BindsModule.class,
           WelcomeViewModel_HiltModules.BindsModule.class
       }

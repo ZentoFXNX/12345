@@ -18,7 +18,7 @@ fun WelcomeScreen(
     onNavigateToHome: () -> Unit,
     viewModel: WelcomeViewModel = hiltViewModel()
 ) {
-    var screenState by remember { mutableStateOf(WelcomeScreenState.INITIAL) }
+    var screenState by remember { mutableStateOf(WelcomeScreenState.PHONE_LOGIN) }
     var phoneNumber by remember { mutableStateOf("") }
 
     when (screenState) {
