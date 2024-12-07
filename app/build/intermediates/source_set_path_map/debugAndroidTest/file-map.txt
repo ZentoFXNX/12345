@@ -29,10 +29,10 @@ com.example.car_damage_diagnosis.test.app-jetified-profileinstaller-1.3.0-27 /Us
 com.example.car_damage_diagnosis.test.app-jetified-lifecycle-viewmodel-ktx-2.6.2-28 /Users/daddyzento/.gradle/caches/transforms-4/e5746f2f596f7d7cbd38bed70c8a3c55/transformed/jetified-lifecycle-viewmodel-ktx-2.6.2/res
 com.example.car_damage_diagnosis.test.app-jetified-startup-runtime-1.1.1-29 /Users/daddyzento/.gradle/caches/transforms-4/ef76f52375ae1a7bb61122407bf6344d/transformed/jetified-startup-runtime-1.1.1/res
 com.example.car_damage_diagnosis.test.app-jetified-activity-ktx-1.7.2-30 /Users/daddyzento/.gradle/caches/transforms-4/feb460bb5ad406e4468e97724b8d162c/transformed/jetified-activity-ktx-1.7.2/res
-com.example.car_damage_diagnosis.test.app-androidTest-31 /Users/daddyzento/12345/app/build/generated/res/resValues/androidTest/debug
-com.example.car_damage_diagnosis.test.app-androidTest-32 /Users/daddyzento/12345/app/build/generated/res/rs/androidTest/debug
-com.example.car_damage_diagnosis.test.app-mergeDebugAndroidTestResources-33 /Users/daddyzento/12345/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.example.car_damage_diagnosis.test.app-mergeDebugAndroidTestResources-34 /Users/daddyzento/12345/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.example.car_damage_diagnosis.test.app-merged_res-35 /Users/daddyzento/12345/app/build/intermediates/merged_res/debugAndroidTest
-com.example.car_damage_diagnosis.test.app-androidTest-36 /Users/daddyzento/12345/app/src/androidTest/res
-com.example.car_damage_diagnosis.test.app-androidTestDebug-37 /Users/daddyzento/12345/app/src/androidTestDebug/res
+com.example.car_damage_diagnosis.test.app-androidTest-31 /Users/daddyzento/own/app/build/generated/res/resValues/androidTest/debug
+com.example.car_damage_diagnosis.test.app-androidTest-32 /Users/daddyzento/own/app/build/generated/res/rs/androidTest/debug
+com.example.car_damage_diagnosis.test.app-mergeDebugAndroidTestResources-33 /Users/daddyzento/own/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.car_damage_diagnosis.test.app-mergeDebugAndroidTestResources-34 /Users/daddyzento/own/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.car_damage_diagnosis.test.app-merged_res-35 /Users/daddyzento/own/app/build/intermediates/merged_res/debugAndroidTest
+com.example.car_damage_diagnosis.test.app-androidTest-36 /Users/daddyzento/own/app/src/androidTest/res
+com.example.car_damage_diagnosis.test.app-androidTestDebug-37 /Users/daddyzento/own/app/src/androidTestDebug/res

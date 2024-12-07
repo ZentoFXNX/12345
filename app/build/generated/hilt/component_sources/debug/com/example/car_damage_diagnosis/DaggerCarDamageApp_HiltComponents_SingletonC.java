@@ -11,6 +11,7 @@ import com.example.car_damage_diagnosis.ui.screens.login.PhoneLoginViewModel;
 import com.example.car_damage_diagnosis.ui.screens.login.PhoneLoginViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.example.car_damage_diagnosis.ui.screens.login.VerifyCodeViewModel;
 import com.example.car_damage_diagnosis.ui.screens.login.VerifyCodeViewModel_HiltModules_KeyModule_ProvideFactory;
+import com.example.car_damage_diagnosis.ui.screens.settings.SettingsActivity;
 import com.example.car_damage_diagnosis.ui.screens.settings.SettingsViewModel;
 import com.example.car_damage_diagnosis.ui.screens.settings.SettingsViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.example.car_damage_diagnosis.ui.screens.welcome.WelcomeViewModel;
@@ -356,6 +357,10 @@ public final class DaggerCarDamageApp_HiltComponents_SingletonC {
 
     @Override
     public void injectMainActivity(MainActivity mainActivity) {
+    }
+
+    @Override
+    public void injectSettingsActivity(SettingsActivity settingsActivity) {
     }
 
     @Override

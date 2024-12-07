@@ -3,24 +3,24 @@
 3    package="com.example.car_damage_diagnosis.test" >
 4
 5    <uses-sdk
-5-->/Users/daddyzento/12345/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest17580278256945294807.xml:5:5-74
+5-->/Users/daddyzento/own/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest16841532351537233191.xml:5:5-74
 6        android:minSdkVersion="24"
-6-->/Users/daddyzento/12345/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest17580278256945294807.xml:5:15-41
+6-->/Users/daddyzento/own/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest16841532351537233191.xml:5:15-41
 7        android:targetSdkVersion="34" />
-7-->/Users/daddyzento/12345/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest17580278256945294807.xml:5:42-71
+7-->/Users/daddyzento/own/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest16841532351537233191.xml:5:42-71
 8
 9    <instrumentation
-9-->/Users/daddyzento/12345/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest17580278256945294807.xml:11:5-15:82
+9-->/Users/daddyzento/own/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest16841532351537233191.xml:11:5-15:82
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->/Users/daddyzento/12345/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest17580278256945294807.xml:11:22-76
+10-->/Users/daddyzento/own/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest16841532351537233191.xml:11:22-76
 11        android:functionalTest="false"
-11-->/Users/daddyzento/12345/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest17580278256945294807.xml:14:22-52
+11-->/Users/daddyzento/own/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest16841532351537233191.xml:14:22-52
 12        android:handleProfiling="false"
-12-->/Users/daddyzento/12345/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest17580278256945294807.xml:13:22-53
+12-->/Users/daddyzento/own/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest16841532351537233191.xml:13:22-53
 13        android:label="Tests for com.example.car_damage_diagnosis"
-13-->/Users/daddyzento/12345/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest17580278256945294807.xml:15:22-80
+13-->/Users/daddyzento/own/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest16841532351537233191.xml:15:22-80
 14        android:targetPackage="com.example.car_damage_diagnosis" />
-14-->/Users/daddyzento/12345/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest17580278256945294807.xml:12:22-78
+14-->/Users/daddyzento/own/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest16841532351537233191.xml:12:22-78
 15
 16    <uses-permission android:name="android.permission.REORDER_TASKS" />
 16-->[androidx.test:core:1.5.0] /Users/daddyzento/.gradle/caches/transforms-4/311369709681ee79543b692e44ef9bf9/transformed/jetified-core-1.5.0/AndroidManifest.xml:24:5-72
@@ -40,12 +40,12 @@
 22    </queries>
 23
 24    <application
-24-->/Users/daddyzento/12345/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest17580278256945294807.xml:7:5-9:19
+24-->/Users/daddyzento/own/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest16841532351537233191.xml:7:5-9:19
 25        android:debuggable="true"
 26        android:extractNativeLibs="false" >
 27        <uses-library android:name="android.test.runner" />
-27-->/Users/daddyzento/12345/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest17580278256945294807.xml:8:9-60
-27-->/Users/daddyzento/12345/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest17580278256945294807.xml:8:23-57
+27-->/Users/daddyzento/own/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest16841532351537233191.xml:8:9-60
+27-->/Users/daddyzento/own/app/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest16841532351537233191.xml:8:23-57
 28
 29        <activity
 29-->[androidx.test:core:1.5.0] /Users/daddyzento/.gradle/caches/transforms-4/311369709681ee79543b692e44ef9bf9/transformed/jetified-core-1.5.0/AndroidManifest.xml:27:9-34:20

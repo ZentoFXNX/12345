@@ -36,9 +36,18 @@
         android:testOnly="true"
         android:theme="@style/Theme.CarDamageDiagnosis" >
 
-        <!-- main вход -->
+        <!-- HistoryActivity временно настроена как стартовая -->
+        <!-- <activity -->
+        <!-- android:name=".ui.screens.history.HistoryActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:theme="@style/Theme.CarDamageDiagnosis"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
         <activity
-            android:name="com.example.car_damage_diagnosis.MainActivity"
+            android:name="com.example.car_damage_diagnosis.ui.screens.settings.SettingsActivity"
             android:exported="true"
             android:theme="@style/Theme.CarDamageDiagnosis" >
             <intent-filter>
@@ -47,11 +56,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.car_damage_diagnosis.ui.screens.history.HistoryActivity" />
-
-        <!-- HistoryActivity временно настроена как стартовая -->
+        <!-- MainActivity отключена как стартовая -->
         <!-- <activity -->
-        <!-- m -->
+        <!-- android:name=".MainActivity" -->
         <!-- android:exported="true" -->
         <!-- android:theme="@style/Theme.CarDamageDiagnosis"> -->
         <!-- <intent-filter> -->

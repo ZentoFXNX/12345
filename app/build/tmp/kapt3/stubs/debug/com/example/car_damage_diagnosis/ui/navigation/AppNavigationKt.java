@@ -1,6 +1,5 @@
 package com.example.car_damage_diagnosis.ui.navigation;
 
-import android.content.Intent;
 import androidx.compose.runtime.Composable;
 import androidx.navigation.NavHostController;
 

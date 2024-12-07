@@ -2,6 +2,7 @@ package com.example.car_damage_diagnosis;
 
 import com.example.car_damage_diagnosis.ui.screens.login.PhoneLoginViewModel_HiltModules;
 import com.example.car_damage_diagnosis.ui.screens.login.VerifyCodeViewModel_HiltModules;
+import com.example.car_damage_diagnosis.ui.screens.settings.SettingsActivity_GeneratedInjector;
 import com.example.car_damage_diagnosis.ui.screens.settings.SettingsViewModel_HiltModules;
 import com.example.car_damage_diagnosis.ui.screens.welcome.WelcomeViewModel_HiltModules;
 import dagger.Binds;
@@ -173,6 +174,7 @@ public final class CarDamageApp_HiltComponents {
   )
   @ActivityScoped
   public abstract static class ActivityC implements MainActivity_GeneratedInjector,
+      SettingsActivity_GeneratedInjector,
       ActivityComponent,
       DefaultViewModelFactories.ActivityEntryPoint,
       HiltWrapper_HiltViewModelFactory_ActivityCreatorEntryPoint,

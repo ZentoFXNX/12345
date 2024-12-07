@@ -1,5 +1,7 @@
 package com.example.car_damage_diagnosis.ui.screens.history
 
+import com.example.car_damage_diagnosis.ui.screens.history.HistoryAdapter
+
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

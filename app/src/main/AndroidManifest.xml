@@ -19,7 +19,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarDamageDiagnosis"
         tools:targetApi="31">
-<!--        main вход-->
+
+        <!-- HistoryActivity временно настроена как стартовая -->
+<!--        <activity-->
+<!--            android:name=".ui.screens.history.HistoryActivity"-->
+<!--            android:exported="true"-->
+<!--            android:theme="@style/Theme.CarDamageDiagnosis">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name=".ui.screens.settings.SettingsActivity"-->
+<!--            android:exported="true"-->
+<!--            android:theme="@style/Theme.CarDamageDiagnosis">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+        <!-- MainActivity отключена как стартовая -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -29,17 +49,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.screens.history.HistoryActivity" />
-
-        <!-- HistoryActivity временно настроена как стартовая -->
-<!--        <activity-->
-<!--            m-->
-<!--            android:exported="true"-->
-<!--            android:theme="@style/Theme.CarDamageDiagnosis">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
     </application>
 </manifest>
